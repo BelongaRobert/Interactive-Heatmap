@@ -61,7 +61,7 @@ ROOT_URLCONF = 'heatmap.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/Users/heheking/Documents/My-Projects/Transloc-Challenge/templates'],
+        'DIRS': ['/Users/heheking/Documents/My-Projects/interactive-heatmap/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
