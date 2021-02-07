@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
-<div id='map' style='width: 400px; height: 300px;'></div>
+<div id='map' style='width: 800px; height: 450px;'></div>
         <script>
             mapboxgl.accessToken = 'pk.eyJ1IjoiYmVsb25nYXJvYmVydCIsImEiOiJja2c2cWd2N3IwdGluMnBwaWV5ZzU2bjhnIn0.QgRdSLNmSGfcu1CMWF7vhw';
             var map = new mapboxgl.Map({
             container: 'map',
-            style: 'mapbox://styles/mapbox/streets-v11'
+            zoom: 0,
+            style: 'mapbox://styles/belongarobert/ckkrdmnfu048f17nojlm01cf9'
             });
         </script>
 {% endblock %}
