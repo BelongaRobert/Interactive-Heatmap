@@ -14,7 +14,7 @@ def home(request):
     return render(request, "home.html")
 
 
-with open('/Users/heheking/Documents/My-Projects/GeoLite2-City-Blocks-IPv4.csv') as f:
+"""with open('/Users/heheking/Documents/My-Projects/GeoLite2-City-Blocks-IPv4.csv') as f:
         reader = csv.reader(f)
         for row in reader:
             _, created = ipv4.objects.get_or_create(
@@ -28,7 +28,7 @@ with open('/Users/heheking/Documents/My-Projects/GeoLite2-City-Blocks-IPv4.csv')
                 latitude = row[7],
                 longitude = row[8],
                 accuracy_radius = row[9],
-                )
+                )"""
 
 """ class CSVUploadView(View):
     def get(self, request):
