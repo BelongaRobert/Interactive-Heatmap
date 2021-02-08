@@ -31,7 +31,7 @@ SECRET_KEY = '<7^6(i+4))txzdsh@ze(sf^j)qrv4p!(wb^fcli#rx_y85$u3#!>'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0','localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['interactive-heatmap.herokuapp.com', '0.0.0.0','localhost', '127.0.0.1']
 
 
 # Application definition
