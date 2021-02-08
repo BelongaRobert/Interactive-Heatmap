@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h4>Import CSV</h4>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="ipv4file">
+    <button type="submit">Upload</button>
+  </form>
+{% endblock %}

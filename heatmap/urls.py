@@ -13,11 +13,12 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
+from django.contrib import admin, views
 from django.urls import path
-from app import views
+from app.views import CSVUploadView 
 urlpatterns = [
     path('admin/', admin.site.urls),
     # heatmap URLs
     path('', views.home, name='home'),
+    path('csvupload/', CSVUploadView.as_view(), name='uploadcsv'),
 ]
