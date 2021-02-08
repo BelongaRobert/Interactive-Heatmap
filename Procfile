@@ -1,1 +1,1 @@
-web: gunicorn <heatmap>.wsgi
+web: gunicorn heatmap.wsgi
