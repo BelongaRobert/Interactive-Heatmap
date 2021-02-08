@@ -75,7 +75,6 @@ TEMPLATES = [
         },
     },
 ]
-
 WSGI_APPLICATION = 'heatmap.wsgi.application'
 
 
@@ -84,8 +83,13 @@ WSGI_APPLICATION = 'heatmap.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE' : 'django.db.backends.postgresql',
+        'NAME' : 'd1tfmisk8shj8u',
+        'HOST' : 'ec2-18-204-101-137.compute-1.amazonaws.com',
+        'PORT' : '5432',
+        'USER' : 'onismnyhetaezi',
+        'PASSWORD' : '7e4552a09b6c51302a1bdf6bf3a8b0d34cac788dba3271f87a949e8015962041'
+
     }
 }
 

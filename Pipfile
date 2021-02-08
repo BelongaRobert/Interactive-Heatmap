@@ -14,6 +14,7 @@ gunicorn = "*"
 django-admin = "*"
 django-csvimport = "*"
 django-adaptors = "*"
+psycopg2 = "*"
 
 [dev-packages]
 
