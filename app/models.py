@@ -1,9 +1,9 @@
 from django.db import models
-# from adaptor.model import CsvModel, IgnoredField, DecimalField, TextField
+from django.db.models import DecimalField, TextField, FloatField
 
 # Create your models here.
-""" class ipv4 (models.Model):
-    network = DecimalField(max_length=100, null=True)
+class ipv4 (models.Model):
+    network = FloatField()
     geoname_id = TextField()
     registered_country_geoname_id = TextField()
     represented_country_geoname_id = TextField()
@@ -18,7 +18,7 @@ from django.db import models
         return self.name
 
 
-class MycsvModel (CsvModel):
+"""class MycsvModel (CsvModel):
     network = IgnoredField()
     geoname_id = IgnoredField()
     registered_country_geoname_id = IgnoredField()

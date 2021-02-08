@@ -3,14 +3,32 @@ from django.shortcuts import render
 from datetime import datetime
 from django.views import View
 from .models import ipv4
-import io,csv """
-
+import io """
+from .models import ipv4
+import csv
 
 
 # Create your views here.
 
 def home(request):
     return render(request, "home.html")
+
+
+with open('/Users/heheking/Documents/My-Projects/GeoLite2-City-Blocks-IPv4.csv') as f:
+        reader = csv.reader(f)
+        for row in reader:
+            _, created = ipv4.objects.get_or_create(
+                network = row[0],
+                geoname_id = row[1],
+                registered_country_geoname_id = row[2],
+                represented_country_geoname_id = row[3],
+                is_anonymous_proxy = row[4],
+                is_satellite_provider = row[5],
+                postal_code = row[6],
+                latitude = row[7],
+                longitude = row[8],
+                accuracy_radius = row[9],
+                )
 
 """ class CSVUploadView(View):
     def get(self, request):
