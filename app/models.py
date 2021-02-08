@@ -1,8 +1,8 @@
 from django.db import models
-from adaptor.model import CsvModel, IgnoredField, DecimalField, TextField
+# from adaptor.model import CsvModel, IgnoredField, DecimalField, TextField
 
 # Create your models here.
-class ipv4 (models.Model):
+""" class ipv4 (models.Model):
     network = DecimalField(max_length=100, null=True)
     geoname_id = TextField()
     registered_country_geoname_id = TextField()
@@ -32,3 +32,4 @@ class MycsvModel (CsvModel):
 
     def __str__(self):
         return self.name
+ """

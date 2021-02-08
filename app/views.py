@@ -1,9 +1,9 @@
 from django.shortcuts import render
-from django.http import HttpResponse,JsonResponse
+""" from django.http import HttpResponse,JsonResponse
 from datetime import datetime
 from django.views import View
 from .models import ipv4
-import io,csv
+import io,csv """
 
 
 
@@ -12,7 +12,7 @@ import io,csv
 def home(request):
     return render(request, "home.html")
 
-class CSVUploadView(View):
+""" class CSVUploadView(View):
     def get(self, request):
         template_name = 'csvupload.html'
         return render(request, template_name)
@@ -44,4 +44,4 @@ class CSVUploadView(View):
             print('Error While Importing Data: ',e)
             returnmsg = {"status_code": 500}
        
-        return JsonResponse(returnmsg)
+        return JsonResponse(returnmsg) """
