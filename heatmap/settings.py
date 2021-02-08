@@ -63,7 +63,8 @@ ROOT_URLCONF = 'heatmap.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/Users/heheking/Documents/My-Projects/interactive-heatmap/templates'],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
