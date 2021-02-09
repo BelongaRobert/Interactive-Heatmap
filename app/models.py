@@ -10,8 +10,8 @@ class ipv4 (models.Model):
     is_anonymous_proxy = TextField()
     is_satellite_provider = TextField()
     postal_code = TextField()
-    latitude = DecimalField()
-    longitude = DecimalField()
+    latitude = DecimalField(max_digits=9, decimal_places=6)
+    longitude = DecimalField(max_digits=9, decimal_places=6)
     accuracy_radius = TextField()
 
     def __str__(self):
