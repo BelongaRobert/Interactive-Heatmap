@@ -1,9 +1,9 @@
 from django.db import models
-from django.db.models import DecimalField, TextField, FloatField
+from django.db.models import DecimalField, TextField, CharField
 
 # Create your models here.
 class ipv4 (models.Model):
-    network = FloatField()
+    network = CharField(max_length=20)
     geoname_id = TextField()
     registered_country_geoname_id = TextField()
     represented_country_geoname_id = TextField()
