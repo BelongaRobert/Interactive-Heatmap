@@ -1,0 +1,9 @@
+#inner {  
+    border: 1px solid black;
+}
+#map {
+    border: 1px solid red;
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
